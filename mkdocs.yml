@@ -1,6 +1,8 @@
 site_name: Dubbo Admin AI Wiki
 site_description: Documentation for Dubbo Admin AI
 site_url: https://stringl1l1l1l.github.io/dubbo-admin-ai-wiki/
+repo_url: https://github.com/stringl1l1l1l/dubbo-admin
+repo_name: stringl1l1l1l/dubbo-admin
 docs_dir: docs
 exclude_docs: |
   zh/proposals/**
@@ -12,6 +14,8 @@ exclude_docs: |
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
 
 plugins:
   - i18n:
