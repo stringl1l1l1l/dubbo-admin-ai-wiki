@@ -1,0 +1,107 @@
+site_name: Dubbo Admin AI Wiki
+site_description: Documentation for Dubbo Admin AI
+site_url: https://stringl1l1l1l.github.io/dubbo-admin-ai-wiki/
+docs_dir: docs
+exclude_docs: |
+  zh/proposals/**
+  zh/developer/PROPOSAL.md
+  zh/developer/TODO.md
+  en/proposals/**
+  en/developer/PROPOSAL.md
+  en/developer/TODO.md
+
+theme:
+  name: material
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: zh
+          name: 中文
+          default: true
+          build: true
+          site_name: Dubbo Admin AI Wiki
+          nav:
+            - 首页: index.md
+            - 快速开始: quick-start.md
+            - 用户指南:
+                - 概览: wiki/user-guide/index.md
+                - API 文档: wiki/user-guide/api.md
+                - 部署与运维: wiki/user-guide/deployment-operations.md
+                - YAML 配置详解: wiki/user-guide/yaml-configuration.md
+                - 故障排查: wiki/user-guide/troubleshooting.md
+                - FAQ: wiki/user-guide/faq.md
+            - 开发者指南:
+                - 架构总览: wiki/developer-guide/architecture-overview.md
+                - 运行时与组件: wiki/developer-guide/runtime-components.md
+                - 组件架构:
+                    - 总览: wiki/developer-guide/components/index.md
+                    - Logger: wiki/developer-guide/components/logger.md
+                    - Memory: wiki/developer-guide/components/memory.md
+                    - Models: wiki/developer-guide/components/models.md
+                    - RAG: wiki/developer-guide/components/rag.md
+                    - Tools: wiki/developer-guide/components/tools.md
+                    - Agent: wiki/developer-guide/components/agent.md
+                    - Server: wiki/developer-guide/components/server.md
+                - Agent 工作流: wiki/developer-guide/agent-workflow.md
+                - RAG 子系统: wiki/developer-guide/rag.md
+                - 模型与插件: wiki/developer-guide/model-providers-plugins.md
+                - 提示词系统: wiki/developer-guide/prompts.md
+                - 工具系统: wiki/developer-guide/tools.md
+                - 开发指南: wiki/developer-guide/development.md
+                - 配置指南: wiki/developer-guide/configuration.md
+        - locale: en
+          name: English
+          build: true
+          site_name: Dubbo Admin AI Wiki
+          nav:
+            - Home: index.md
+            - Quick Start: quick-start.md
+            - User Guide:
+                - Overview: wiki/user-guide/index.md
+                - API Docs: wiki/user-guide/api.md
+                - Deployment & Operations: wiki/user-guide/deployment-operations.md
+                - YAML Configuration: wiki/user-guide/yaml-configuration.md
+                - Troubleshooting: wiki/user-guide/troubleshooting.md
+                - FAQ: wiki/user-guide/faq.md
+            - Developer Guide:
+                - Architecture Overview: wiki/developer-guide/architecture-overview.md
+                - Runtime & Components: wiki/developer-guide/runtime-components.md
+                - Components:
+                    - Overview: wiki/developer-guide/components/index.md
+                    - Logger: wiki/developer-guide/components/logger.md
+                    - Memory: wiki/developer-guide/components/memory.md
+                    - Models: wiki/developer-guide/components/models.md
+                    - RAG: wiki/developer-guide/components/rag.md
+                    - Tools: wiki/developer-guide/components/tools.md
+                    - Agent: wiki/developer-guide/components/agent.md
+                    - Server: wiki/developer-guide/components/server.md
+                - Agent Workflow: wiki/developer-guide/agent-workflow.md
+                - RAG Subsystem: wiki/developer-guide/rag.md
+                - Models & Plugins: wiki/developer-guide/model-providers-plugins.md
+                - Prompt System: wiki/developer-guide/prompts.md
+                - Tooling System: wiki/developer-guide/tools.md
+                - Development Guide: wiki/developer-guide/development.md
+                - Configuration Guide: wiki/developer-guide/configuration.md
+  - search
+  - mermaid2
+
+extra:
+  alternate:
+    - name: 中文
+      link: ./
+      lang: zh
+    - name: English
+      link: ./en/
+      lang: en
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - admonition
+  - attr_list
