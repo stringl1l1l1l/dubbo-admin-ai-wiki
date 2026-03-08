@@ -93,6 +93,7 @@ plugins:
             - Proposals:
                 - ReAct AgentState FSM Proposal: wiki/proposals/agent-state-fsm-proposal.md
                 - Layered Memory Compaction Proposal: wiki/proposals/memory-compaction-proposal.md
+                - RAG Retrieval Optimization Proposal: wiki/proposals/rag-retrieval-optimization-proposal.md
   - search
   - mermaid2
 
