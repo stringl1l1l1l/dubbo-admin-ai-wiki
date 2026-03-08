@@ -5,12 +5,8 @@ repo_url: https://github.com/stringl1l1l1l/dubbo-admin
 repo_name: stringl1l1l1l/dubbo-admin
 docs_dir: docs
 exclude_docs: |
-  zh/proposals/**
-  zh/developer/PROPOSAL.md
-  zh/developer/TODO.md
-  en/proposals/**
-  en/developer/PROPOSAL.md
-  en/developer/TODO.md
+  PROPOSAL.md
+  TODO.md
 
 theme:
   name: material
@@ -57,6 +53,10 @@ plugins:
                 - 工具系统: wiki/developer-guide/tools.md
                 - 开发指南: wiki/developer-guide/development.md
                 - 配置指南: wiki/developer-guide/configuration.md
+            - 提案:
+                - ReAct AgentState FSM Proposal: wiki/proposals/agent-state-fsm-proposal.md
+                - Memory 分层压缩 Proposal: wiki/proposals/memory-compaction-proposal.md
+                - RAG 检索优化 Proposal: wiki/proposals/rag-retrieval-optimization-proposal.md
         - locale: en
           name: English
           build: true
@@ -90,6 +90,9 @@ plugins:
                 - Tooling System: wiki/developer-guide/tools.md
                 - Development Guide: wiki/developer-guide/development.md
                 - Configuration Guide: wiki/developer-guide/configuration.md
+            - Proposals:
+                - ReAct AgentState FSM Proposal: wiki/proposals/agent-state-fsm-proposal.md
+                - Layered Memory Compaction Proposal: wiki/proposals/memory-compaction-proposal.md
   - search
   - mermaid2
 

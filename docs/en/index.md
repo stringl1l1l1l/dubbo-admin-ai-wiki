@@ -58,3 +58,4 @@ For field-by-field explanations and full YAML semantics, go straight to [YAML Co
 - Quick Start: the shortest path to boot the service and send the first request.
 - User Guide: focused on integration, deployment, and operations.
 - Developer Guide: focused on architecture, maintenance, and capability extension.
+- Proposals: capture major design decisions, constraints, and evolution plans.
